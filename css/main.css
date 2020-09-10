@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body .topBar {
+  width: 100%;
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #d6d6d6;
+}
+body .topBar .subTopBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+body .topBar .subTopBar .topBar-icon {
+  width: 4vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+}
+body .topBar .subTopBar .topBar-icon .icon-svg {
+  fill: #e60023;
+}
+body .topBar .subTopBar .topBar-icon .icon-svg:hover {
+  fill: #00e6c3;
+}
+body .topBar .subTopBar .input-navbar {
+  width: 100%;
+  border: 1px solid #9c9c9c;
+  position: relative;
+  top: 0.5vh;
+  border-radius: 20px;
+}
+body .topBar .subTopBar .input-navbar input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  outline: none;
+  text-align: left;
+  padding-left: 10px;
+}
+body .topBar .subTopBar .button-box {
+  width: 20vw;
+  height: 7vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-around;
+}
+body .topBar .subTopBar .button-box .download {
+  border: 1px solid gray;
+  margin-top: 5px;
+  width: 50%;
+  background-color: white transparent;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .topBar .subTopBar .button-box .download .text-download {
+  font-weight: bolder;
+}
+body .topBar .subTopBar .button-box .login {
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #e60023;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+body .content-wrapper {
+  padding: 1.5em;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .content-wrapper .content {
+  column-gap: 20px;
+}
+body .content-wrapper .content .images-container {
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+body .content-wrapper .content .images-container img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content {
+    column-count: 7;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .content {
+    column-count: 4;
+  }
+
+  .text-download, .text-login {
+    font-size: 10px;
+  }
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 568px) {
+  .content {
+    column-count: 3;
+  }
+
+  .topBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 567px) and (min-width: 345px) {
+  .content {
+    column-count: 2;
+  }
+
+  .topBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .content {
+    column-count: 1;
+  }
+
+  .topBar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
